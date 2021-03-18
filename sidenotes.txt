@@ -15,3 +15,5 @@ select server: us east 1 = 15, NA,NE = 12, us east 4 = 16
 make sure to enable gcloud build api  for each project
 each time publishing run: $ gcloud app deploy
 to open from cli, gcloud app browse
+for this project:
+https://owais-recipe-book.ue.r.appspot.com/
