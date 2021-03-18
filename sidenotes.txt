@@ -1,0 +1,17 @@
+during initialization of web app:
+need app.yaml, main.py, requirements.txt
+to setup virtual environment: in project folder (git bash)terminal:
+$ py -m venv venv
+$ source venv/Scripts/activate
+$ pip3 install -r requirements.txt
+and run from bash with :
+$ py main.py 
+then go to https://console.cloud.google.com/home/dashboard and create new project
+go to select project and go to app engine dashboard
+run suggested command "deploy via command line": $ gcloud app deploy:
+    must be logged into correct account (gcloud auth login)
+    and must be in correct project (gcloud config set project PROJECT_ID) 
+select server: us east 1 = 15, NA,NE = 12, us east 4 = 16
+make sure to enable gcloud build api  for each project
+each time publishing run: $ gcloud app deploy
+to open from cli, gcloud app browse
